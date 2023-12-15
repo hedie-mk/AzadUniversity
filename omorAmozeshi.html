@@ -8,7 +8,26 @@
     <title>Omor Amozeshi</title>
 </head>
 <body>
-    
+    <!------------------------sign up section------------------------->
+    <section>
+        <div class="BlurPage"></div>
+        <div class="signUp">
+            <h1>درخواست ثبت نام</h1>
+            <form class="infBoxes" name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="نام" required>
+                <input type="text" name="LastName" placeholder="نام و نام خانوادگی" required>
+                <input type="text" name="Age" placeholder="سن">
+                <input type="number" name="Id" placeholder="کد ملی">
+                <input type="text" name="Filed" placeholder="نام رشته مورد نظر">
+                <input type="number" name="Number" placeholder="شماره تماس">
+                <div class="buttons">
+                    <button type="submit" class="sub">ثبت اطلاعات</button>
+                    <button id="ex">انصراف</button>
+                </div>
+            </form>
+            
+        </div>
+    </section>
     <!------------------------------------------nav bar------------------------------------------>
     <nav class="container">
         <img src="/PIC/logo.png" id="Unilogo" alt="university logo">
@@ -138,5 +157,15 @@
     <!----------------------------------------Java Script--------------------------------------------------->
         <!-------------------------------nav bar---------------------------------->    
         <script src="/AzadUniversity/navBar.js"></script>
+        <!-------------------------------Sign Up-------------------------------->
+        <script>
+            const section = document.querySelector("section"),
+            BlurPage = document.querySelector(".Blur-page") ;
+            
+            const showBotton = document.querySelector(".btn");
+            const closebotton = document.querySelector("#ex");
+            showBotton.addEventListener("click", () => section.classList.add("active"));
+            closebotton.addEventListener("click", () => section.classList.remove("active"));  
+        </script>
 </body>
 </html>
