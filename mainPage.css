@@ -236,3 +236,88 @@ header{
     margin-bottom: 15px;
     color:white ;
 }
+/*-----------------------------FAQ----------------------------*/
+.questions{
+    width: 100%;
+    height: auto;
+    background-color: #0D00A3;
+    padding: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.questions > h1{
+    font-size: 35px;
+    font-family: BTitr;
+    text-align: center;
+    color: #ffffff;
+    margin: 20px;
+}
+.faq-container{
+    text-align: right;
+    max-width: 750px;
+    width: 100%;
+}
+.faq{
+    display: flex;
+    direction: rtl;
+    margin: 18px 0;
+}
+.QandA{
+    display: flex;
+    flex-direction: column;
+    width:570px;
+    height: fit-content;
+    border-radius: 50px;
+    background-color: #ffffff;
+    padding: 0 30px;
+}
+.QandA > h4{
+    font-size: 30px;
+    font-family: Bnazanin;
+    font-weight: 300;
+    color: #0D00A3;
+    margin: 5px 0;
+}
+.QandA > p{
+    font-family: Bnazanin;
+    color: #4137aad6;
+    padding: 0 10px;
+    display: none;
+}
+.faq.open  p{
+    display: block;
+}
+.plus-icon{
+    width: 50px;
+    height: 50px;
+    background-color: #eaeaea;
+    border-radius: 50%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+.bi-plus{
+    font-size: larger;
+    color: #0D00A3;
+}
+.bi-dash{
+    font-size: larger;
+    color: #ff0000;
+}
+ul{
+    font-family: Bnazanin;
+    list-style-type: circle;
+    font-size: 18px;
+    font-weight: 100;
+    color: #4137aad6;
+    padding: 0 10px;
+    display: none;
+}
+.faq.open ul{
+    display: block;
+}
