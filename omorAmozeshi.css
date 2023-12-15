@@ -163,5 +163,115 @@ header{
     margin-top: 20px;
     cursor: pointer;
 }
+/*---------------------------------------------*/
 
+.divThree{
+    padding-top: 120px;
+    width: 930px;
+    margin-bottom: 40px;
+}
+.divThree > h1{
+    font-size: 2em;
+    direction: rtl;
+    font-family: BTitr;
+    color:#0D00A3;
+    margin-bottom: 20px;
+}
+.wrapper {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 750px;
+    width: 100%;
+    height: 400px;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .wrapper i.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 36px;
+    width: 36px;
+    background-color: #0D00A3;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.3s linear;
+    z-index: 100;
+    cursor: pointer;
+  }
+  i.button:active {
+    transform: scale(0.94) translateY(-50%);
+  }
+  i#prev {
+    left: 25px;
+  }
+  i#next {
+    right: 25px;
+  }
+  .image-container {
+    height: 320px;
+    max-width: 400px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .image-container .carousel {
+    display: flex;
+    max-width: 400px;
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s ease;
+  }
+  .carousel img {
+    height: 100%;
+    width: 100%;
+    border-radius: 18px;
+    border: 10px solid #fff;
+    object-fit:fill;
+  }
+  /*----------------------------Footer-----------------------------------------*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+    justify-content: right;
+    font-family: Bnazanin;
+    background: #E9E7FF;
+}
+.peyvand{
+    min-width: 200px;
+    margin: 10px;
+    margin-left: 20px;
+}
+.contact{
+    max-width:350px;
+    margin: 10px;
+    margin-left: auto;
+}
+.peyvand > .line {
+    background-color:black;
+    height: 1.5px;
+}
+.contact > .line{
+    background-color:black;
+    height: 1.5px;
+}
+.peyvand > h2 , .contact > h2{
+    font-size: 1.2em;
+}
+.peyvand > h4 , .contact > h4{
+    margin-top: 5px ;
+    font-size: 15px;
+}
+.logo > img{
+    width:135px;
+    height: 210px;
+}
 
