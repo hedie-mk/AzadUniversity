@@ -359,3 +359,160 @@ footer{
     width:135px;
     height: 210px;
 }
+
+@media only screen and (max-width:850px){
+    /*-----------------navbar--------------------*/
+    .menu-btn{
+        padding-top: 8px;
+        width: fit-content;
+        height: fit-content;
+        display: block;
+        opacity: 1;
+    }
+    .container{
+        padding: 0%;
+    }
+    #Unilogo{
+        position: absolute;
+    }
+    .navList{
+        padding-top: 75px;
+        flex-direction: column;
+        width: 100%;
+        height: 85.6vh;
+        align-items:center;
+        background :#405d9d;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .navList li{
+        padding: 25px;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-left-radius: 30%;
+
+    }
+    /*-----------------main body------------------*/
+    .head{
+        width: 100%;
+        background: url(./PIC/university.jpg);
+        top: 80px;
+        bottom: 75px;
+    }
+    .head{
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: center;
+    }
+    .Unipic{
+        display: none;
+        width: 0%;
+    }
+    .uniform{
+        padding: 0px 0px;
+        border-radius: 20px;
+        background: rgba(217, 217, 217, 0.80);
+        max-width: 500px;
+        min-width: 200px;
+        width: 100%;
+        height: 200px;
+        margin: 0 10px;
+    }
+    .uniform h1{
+        padding: 10px;
+        font-size: 30px;
+    }
+    .uniform p{
+        font-size: 18px;
+        padding: 0px 10px;
+    }
+    .btn-stu{
+    background: #ffffff;
+    }
+    .btn-stu a {
+        text-decoration: none;
+        color:#0D00A3;
+        font-family: Bnazanin;
+        font-weight: bolder;
+    }
+    .btn-stu:hover{
+        background-color: #a9c2f9;
+    }
+    .btn-te{
+        background: #ffffff;
+    }
+    .btn-te a {
+        text-decoration: none;
+        color:#0D00A3;
+        font-family: Bnazanin;
+        font-weight: bolder;
+    } 
+    .btn-te:hover{
+        background-color: #a9c2f9;
+    }       
+/*----------------------------about-----------------------------*/
+    .about{
+        display: flex;
+        justify-content: center;
+    }
+    .aboutPics{
+        display: none;
+    }
+    .aboutPics > img{
+        display: none;
+    }
+    .aboutText{
+        width: 80%;
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .aboutText > h1{
+        font-size: 1.3em ;
+        margin-bottom: 15px;
+    }
+    .aboutText > p{
+        font-size: 18px;
+    }
+/*-------------------------------fildes-----------------------------------*/
+    .fildes{
+        height: 400px;
+    }
+    .box{
+        width: 150px;
+        display: flex;
+    }
+    .box > img{
+        margin: 20px 0;
+        width: 70%;
+        height: 150px;
+        border-radius:25px;
+    }
+    .box > h3{
+        font-size: 25px;
+    }
+    .fildes  h1{
+        font-size: 1.5em;
+    }
+/*-------------------------------------FAQ--------------------------------*/
+    .questions > h1{
+        font-size: 1.5em;
+    }
+    .faq{
+        width: 80%;
+        height: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .plus-icon{
+        height:45px;
+    }
+    footer .logo{
+        display: none;
+    }   
+     
+}
