@@ -502,6 +502,13 @@ footer{
     .questions > h1{
         font-size: 1.5em;
     }
+    .QandA  h4{
+        font-size: 25px;
+        font-weight: 200;
+    }
+    .QandA  p{
+        font-size: 17px;
+    }
     .faq{
         width: 80%;
         height: 80%;
@@ -539,9 +546,9 @@ footer{
     
     /*-------------------------------------FAQ--------------------------------*/
     
-        .QandA > h4{
-            font-size: 25px;
-            font-weight: 400;
+        .QandA  h4{
+            font-size: 20px;
+            font-weight: 200;
         }
         .QandA > p{
             font-size: 17px;
