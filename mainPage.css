@@ -186,3 +186,53 @@ header{
     border-radius: 50px;
     box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.25);
 }
+/*------------------------fildes---------------------------*/
+
+.fildes{
+    margin-top: 50px;
+    max-width: 1120px;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+.fildes > h1{
+    font-family: BTitr;
+    font-size: 2em;
+    color: #0D00A3;
+}
+.slide-content{
+    max-width: 950px;
+    width: 100%;
+}
+.boxes{
+    display: flex;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    width: 300px;
+    border-radius:25px;
+    background: #F00;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.box.even{
+    background: #0D00A3;
+}
+.box > img{
+    margin: 25px 92px 10px 25px;
+    width: 80%;
+    height: 200px;
+    border-radius:25px;
+}
+.box > h3{
+    font-family: BTitr;
+    font-weight: 400;
+    font-size: 33px;
+    margin-bottom: 15px;
+    color:white ;
+}
