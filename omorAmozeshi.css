@@ -118,4 +118,50 @@ header{
 .botton:hover{
     background: rgb(255, 0, 0);
 }
+/*---------------------------------------------------*/
+.divTwo{
+    direction: rtl;
+    display: flex;
+    background-color: #0D00A3;
+    height: 370px;
+    border-radius: 0px 0px 0px 185px;
+}
+.backphoto > img{
+    width: 710px;
+    height: 100%;
+}
+.SignIn{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+}
+.SignIn h1{
+    font-size: 50px;
+    font-weight: 300;
+    font-family: BTitr;
+    color:#F0F0F2;
+}
+.SignIn > h4{
+    font-size: 25px;
+    font-family: Bnazanin;
+    color:#F0F0F2;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 168px;
+    height: 44px;
+    font-family: Bnazanin;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #1305BC 0%, #3425E1 100%);
+    box-shadow: -5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    color:#F0F0F2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
 
