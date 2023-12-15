@@ -321,3 +321,41 @@ ul{
 .faq.open ul{
     display: block;
 }
+/*----------------------------Footer-----------------------------------------*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+    justify-content: right;
+    font-family: Bnazanin;
+    background: #E9E7FF;
+}
+.peyvand{
+    min-width: 200px;
+    margin: 10px;
+    margin-left: 20px;
+}
+.contact{
+    max-width:350px;
+    margin: 10px;
+    margin-left: auto;
+}
+.peyvand > .line {
+    background-color:black;
+    height: 1.5px;
+}
+.contact > .line{
+    background-color:black;
+    height: 1.5px;
+}
+.peyvand > h2 , .contact > h2{
+    font-size: 1.2em;
+}
+.peyvand > h4 , .contact > h4{
+    margin-top: 5px ;
+    font-size: 15px;
+}
+.logo > img{
+    width:135px;
+    height: 210px;
+}
