@@ -152,3 +152,37 @@ header{
     font-family: Bnazanin;
     font-weight: bolder;
 }
+/*----------------------------about-----------------------------*/
+.about{
+    background:#0D00A3;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+}
+.aboutText{
+    width: 50%;
+    margin: 100px 130px;
+}
+.aboutText > h1{
+    font-family: BTitr;
+    font-size: 1.8em ;
+    color: #ffffff;
+}
+.aboutText > p{
+    font-family: Bnazanin;
+    color: #ffffff;
+}
+.aboutPics{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutPics > img{
+    width: 90%;
+    margin: 20px 0;
+    border-radius: 50px;
+    box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+}
