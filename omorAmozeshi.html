@@ -167,5 +167,58 @@
             showBotton.addEventListener("click", () => section.classList.add("active"));
             closebotton.addEventListener("click", () => section.classList.remove("active"));  
         </script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwUFw2yAQbGH_xyIFAzacYSl9PVvPASUCpMABq-QD79vk9v3y37r3d6MXi4aIsoicw/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+
+        <script>
+            const wrapper = document.querySelector(".wrapper"),
+            carousel = document.querySelector(".carousel"),
+            images = document.querySelectorAll("img"),
+            buttons = document.querySelectorAll(".button");
+            let imageIndex = 0,
+            intervalId;
+            // Define function to start automatic image slider
+            const autoSlide = () => {
+                // Start the slideshow by calling slideImage() every 2 seconds
+                intervalId = setInterval(() => slideImage(++imageIndex), 2000);
+            };
+            // Call autoSlide function on page load
+            autoSlide();
+            // A function that updates the carousel display to show the specified image
+            const slideImage = () => {
+                // Calculate the updated image index
+                imageIndex = imageIndex === images.length ? 0 : imageIndex < 0 ? images.length - 1 : imageIndex;
+                // Update the carousel display to show the specified image
+                carousel.style.transform = `translate(-${imageIndex * 110}%)`;
+            };
+            // A function that updates the carousel display to show the next or previous image
+            const updateClick = (e) => {
+                // Stop the automatic slideshow
+                clearInterval(intervalId);
+                // Calculate the updated image index based on the button clicked
+                imageIndex += e.target.id === "next" ? 1 : -1;
+                slideImage(imageIndex);
+                // Restart the automatic slideshow
+                autoSlide();
+            };
+            // Add event listeners to the navigation buttons
+            buttons.forEach((button) => button.addEventListener("click", updateClick));
+            // Add mouseover event listener to wrapper element to stop auto sliding
+            wrapper.addEventListener("mouseover", () => clearInterval(intervalId));
+            // Add mouseleave event listener to wrapper element to start auto sliding again
+            wrapper.addEventListener("mouseleave", autoSlide);
+        </script> 
 </body>
 </html>
