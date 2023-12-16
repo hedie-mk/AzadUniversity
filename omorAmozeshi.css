@@ -367,3 +367,103 @@ footer{
     height: 210px;
 }
 
+
+@media only screen and (max-width:1070px){
+    /*-----------------------------------------*/
+    .divTwo{
+        height: 300px;
+    }
+    .backphoto img{
+        width: 450px;
+    }
+    .SignIn{
+        margin-top: 50px;
+    }
+    .SignIn h1{
+        font-size: 40px;
+        font-weight: 300;
+        font-family: BTitr;
+        color:#F0F0F2;
+    }
+    .SignIn > h4{
+        font-size: 20px;
+        font-family: Bnazanin;
+        color:#F0F0F2;
+    }
+    .btn{
+        width: 155px;
+        height: 44px;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    /*-----------------------------------------*/
+    
+}    
+@media only screen and (max-width:850px){
+    /*----------------------------navbar-----------------------------*/
+        .menu-btn{
+            padding-top: 8px;
+            width: fit-content;
+            height: fit-content;
+            display: block;
+            opacity: 1;
+        }
+        .container{
+            padding: 0%;
+        }
+        #Unilogo{
+            position: absolute;
+        }
+        .navList{
+            padding-top: 75px;
+            flex-direction: column;
+            width: 100%;
+            height: 85.6vh;
+            align-items:center;
+            background :#405d9d;
+            margin-top: -900px;
+            transition: all 0.5s ease;
+        }
+        .navList li{
+            padding: 25px;
+        }
+        .mobile-menu{
+            margin-top: 0px;
+            border-bottom-left-radius: 30%;
+    
+        }
+    /*----------------------------------------------*/
+        .backphoto{
+            display: none;
+        }
+    
+
+        .divThree{
+            width: 500px;
+        }
+        /*----------------------------------------------------*/
+        footer .logo{
+            display: none;
+        }
+        /*----------------------------------------------------*/
+
+    }
+
+
+@media only screen and (max-width:500px){
+    
+        .signUp{
+            width: 90%;
+            height: auto;
+        }
+        .buttons{
+            flex-wrap: wrap;
+        }
+        .buttons button{
+            margin-bottom: 20px;
+            margin-left: 0;
+        }
+        .signUp > h1{
+            font-size: 1.3em;
+        }
+}

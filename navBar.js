@@ -1,4 +1,4 @@
-const menubtn = document.querySelector('.menu-btn')
+        const menubtn = document.querySelector('.menu-btn')
         const navlinks = document.querySelector('.navList')
         const backcolor = document.querySelector('.container')
 
