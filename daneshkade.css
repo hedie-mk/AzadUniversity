@@ -1,0 +1,389 @@
+@font-face {
+    font-family: BTitr;
+    src: url(/Titr.ttf);
+}
+@font-face {
+    font-family: Bnazanin;
+    src: url(/B-NAZANIN.TTF);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    
+}
+ul{
+    list-style: none;
+}
+a , a:visited {
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+/*---------------------navbar------------------------*/
+
+.container{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background:#0D00A3;
+}
+#Unilogo{
+    width: 85px;
+    height: 80px;
+}
+.menu-btn{
+    position: absolute;
+    cursor: pointer;
+    display: none;
+    top: 0px;
+    right: 20px;
+    width: 40px;
+}
+.navList{
+    margin-left: auto;
+    display: flex;
+    padding: 25px;
+}
+.navList li{
+    padding: 0px 33px;
+    font-family: Bnazanin;
+}
+
+/*------------------------header------------------------------------*/
+
+header{
+    text-align: right;
+}
+h1{
+    padding-top: 110px;
+    font-size: 2em;
+    font-family: BTitr;
+    color:#0D00A3;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    text-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.FacForm{
+    width: 547px;
+    height: 300px;
+    margin: 30px;
+    box-shadow: -10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    background: #FFF;
+    border-radius: 0px 0px 25px 25px;
+    border-top: 3px solid #0D00A3;
+}
+.FacForm h2{
+    font-size: 1.5em;
+    font-family: BTitr;
+    color: #0D00A3;
+    margin: 15px;
+
+}
+.FacForm p{
+    margin: 13px;
+    font-family: Bnazanin;
+}
+.FacForm > .btn{
+    display: flex;
+    width: 195px;
+    height: 52px;
+    border-radius: 50px;
+    background: #0D00A3;
+    text-align: center;
+    align-items:center;
+    justify-content: center;
+    margin: 10px;
+}
+.btn a{
+    font-family: Bnazanin;
+    font-size: 1.1em;
+    font-weight: 550;
+}
+
+.btn:hover{
+    background-color:red;
+    transition: all 0.3s ease-in;
+    transition-timing-function: linear;
+}
+
+/*----------------------------Footer-----------------------------------------*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+    justify-content: right;
+    font-family: Bnazanin;
+    background: #E9E7FF;
+}
+.peyvand{
+    min-width: 200px;
+    margin: 10px;
+    margin-left: 20px;
+}
+.contact{
+    max-width:350px;
+    margin: 10px;
+    margin-left: auto;
+}
+.peyvand > .line {
+    background-color:black;
+    height: 1.5px;
+}
+.contact > .line{
+    background-color:black;
+    height: 1.5px;
+}
+.peyvand > h2 , .contact > h2{
+    font-size: 1.2em;
+}
+.peyvand > h4 , .contact > h4{
+    margin-top: 5px ;
+    font-size: 15px;
+}
+.logo > img{
+    width:135px;
+    height: 210px;
+}
+
+/*---------------------------PopUp Modal bars----------------------------------*/
+
+.Modalbar{
+    z-index: 2;
+    border-radius:10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: auto;
+    padding-bottom: 95px;
+    background-color:#ffffff;
+    opacity: 0;
+    pointer-events: none;
+}
+.headerBar{
+    direction: rtl;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    width: 100%;
+    height: 30px;
+    background-color:#0D00A3;
+}
+.headerBar > .X{
+    height: 20px;
+    width: 22px;
+    margin-top: 4.5px;
+    margin-right:4.5px;
+    cursor: pointer;
+}
+.Modalbar > .h1{
+    margin: 40px;
+    text-align: right;
+    padding: 0;
+    font-family: BTitr;
+}
+.cont{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-around;
+    margin-top: 60px;
+    
+}
+.FacultyBoss{
+    display: flex;
+    align-items:center;
+}
+.FacultyBoss > div > img{
+    width: 125px;
+    height: 140px;
+    border-radius:50%;
+    box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.info{
+    font-family: BTitr;
+    display: inline-block;
+    text-align: center;
+    margin-right: 25px;
+}
+.info > h2{
+    font-size: 25px;
+    color:red;
+}
+.info > h4{
+    font-size: 18px;
+    color:#0D00A3;
+    font-family: Bnazanin;
+}
+table{
+    width: 340px;
+    text-align: right;
+    direction: rtl;
+    font-family: Bnazanin;
+}
+th{
+    padding-right: 10px;
+}
+td{
+    padding-right: 10px;
+    border-bottom:2px solid #0D00A3;
+    color: #0D00A3;
+}
+tr:hover{
+    background-color:#b4b0e2;
+}
+#head{
+    height: 35px;
+    font-size: 20px;
+    color: #FFF;
+    background-color:#0D00A3;
+}
+.BlurPage{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+}
+/*---------------------------------------*/
+
+section.hesabdari #hesabdari{
+    opacity: 1;
+    pointer-events: auto;
+
+}
+section.hesabdari .BlurPage{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+section.hoghogh #hoghogh{
+    opacity: 1;
+    pointer-events: auto;
+}
+section.hoghogh .BlurPage{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+section.adabiat #adabiat{
+    opacity: 1;
+    pointer-events: auto;
+}
+section.adabiat .BlurPage{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+section.fani #fani{
+    opacity: 1;
+    pointer-events: auto;
+}
+section.fani .BlurPage{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media only screen and (max-width:850px){
+/*----------------------------navbar-----------------------------*/
+    .menu-btn{
+        padding-top: 8px;
+        width: fit-content;
+        height: fit-content;
+        display: block;
+        opacity: 1;
+    }
+    .container{
+        padding: 0%;
+    }
+    #Unilogo{
+        position: absolute;
+    }
+    .navList{
+        padding-top: 75px;
+        flex-direction: column;
+        width: 100%;
+        height: 85.6vh;
+        align-items:center;
+        background :#405d9d;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .navList li{
+        padding: 25px;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-left-radius: 30%;
+
+    }
+    .Modalbar{
+        width: 90%;
+        height: auto;
+    }
+
+/*---------------------------Header Boxes----------------------------*/
+
+    h1{
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    .FacForm{
+        width: 80%;
+        height: auto;
+    }
+    .FacForm h2{
+        font-size: 1.2em;
+    }
+    .FacForm p{
+        margin: 8px;
+        font-size: 18px;
+    }
+    .FacForm > .btn{
+        width: 160px;
+        height: 50px;
+        margin: 10px;
+    }
+    .btn a{
+        font-size: 1em;
+    }
+
+}
+
+
+@media only screen and (max-width:650px){
+    
+    .Modalbar{
+        width: 90%;
+        height: auto;
+    }
+    table{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .Modalbar > .h1{
+        font-size: 30px;
+        margin: 20px;
+        margin-bottom: 40px;
+    }
+    .cont{
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
+    footer .logo{
+        display: none;
+    }
+    td{
+        font-size: 18px;
+    }
+}
