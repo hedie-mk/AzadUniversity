@@ -1,0 +1,469 @@
+@font-face {
+    font-family: BTitr;
+    src: url(/Titr.ttf);
+}
+@font-face {
+    font-family: Bnazanin;
+    src: url(/B-NAZANIN.TTF);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    
+}
+ul{
+    list-style: none;
+}
+a , a:visited {
+    text-decoration: none;
+    color:whitesmoke;
+}
+/*------------------------section--------------------*/
+section{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    direction: rtl;
+}
+.signUp{
+    z-index: 2;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 420px;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: -10px 10px 4px 0px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    pointer-events: none;
+}
+.BlurPage{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 1000%;
+    background:rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+}
+.infBoxes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+.signUp > h1{
+    font-size: 1.8em;
+    text-align: center;
+    font-family: BTitr;
+    font-weight: 900;
+    color:#0D00A3;
+    margin: 15px auto;
+}
+.infBoxes > input{
+    font-family: Bnazanin;
+    padding-right: 15px;
+    margin: 10px 10px;
+    width: 175px;
+    height: 38px;
+    border-radius: 10px;
+    border: 1px solid rgba(217, 217, 217, 0.80);
+    background: #FFF;
+    box-shadow: -4px 4px 4px 0px rgba(13, 0, 163, 0.12);
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 40px;
+}
+button{
+    font-family: Bnazanin;
+    width: 135px;
+    height: 39px;
+    border-style: none;
+    border-radius: 30px;
+    box-shadow: -4px 4px 4px 0px rgba(13, 0, 163, 0.12);
+    cursor: pointer;
+}
+.sub{
+    margin-left: 35px;
+}
+.sub:hover{
+    background:#0D00A3;
+    color:#FFF;
+    transition: all 0.3s ease-in;
+}
+#ex:hover{
+    background:#ff0000;
+    color:#FFF;
+    transition: all 0.3s ease-in;
+}
+section.active .signUp{
+    opacity: 1;
+    pointer-events: auto;
+}
+section.active .BlurPage{
+    opacity: 1;
+    pointer-events: auto;
+}
+/*---------------------navbar------------------------*/
+.container{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background:#0D00A3;
+}
+#Unilogo{
+    width: 85px;
+    height: 80px;
+}
+.menu-btn{
+    position: absolute;
+    cursor: pointer;
+    display: none;
+    top: 0px;
+    right: 20px;
+    width: 40px;
+}
+.navList{
+    margin-left: auto;
+    display: flex;
+    padding: 25px;
+}
+.navList li{
+    padding: 0px 33px;
+    font-family: Bnazanin;
+}
+
+/*---------------------------div One----------------------------*/
+header{
+    display: flex;
+    justify-content: center;
+}
+.divOne{
+    padding-top: 120px;
+    max-width: 930px;
+}
+.divOne > h1{
+    text-align: right;
+    font-size: 2em;
+    font-family: BTitr;
+    color:#0D00A3;
+    
+}
+.khadamat{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width:100%;
+    margin-top: 30px;
+    direction: rtl
+}
+.box{
+    width: 265px;
+    height: 300px;
+    margin-bottom: 35px;
+    text-align: center;
+    border-radius: 0px 0px 25px 25px;
+    background: #F0F0F2;
+    box-shadow: 0px 5px 8px 2px rgba(0, 0, 0, 0.25);
+}
+.pic{
+    display: flex;
+    background: url(/PIC/background.webp), lightgray 50% / cover no-repeat;
+    justify-content: center;
+    align-items:center;
+}
+.pic > img{
+    width: 125px;
+    height: 125px;
+    padding: 25px 0px;
+}
+.info{
+    margin-top: 20px;
+    font-family: Bnazanin;
+
+}
+.info > h5{
+    font-weight: 200;
+    font-size: 25px;
+}
+.botton{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 36px;
+    border-radius: 20px;
+    background: #0D00A3;
+    color:#F0F0F2;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.botton:hover{
+    background: rgb(255, 0, 0);
+}
+/*---------------------------------------------------*/
+.divTwo{
+    direction: rtl;
+    display: flex;
+    background-color: #0D00A3;
+    height: 370px;
+    border-radius: 0px 0px 0px 185px;
+}
+.backphoto > img{
+    width: 710px;
+    height: 100%;
+}
+.SignIn{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+}
+.SignIn h1{
+    font-size: 50px;
+    font-weight: 300;
+    font-family: BTitr;
+    color:#F0F0F2;
+}
+.SignIn > h4{
+    font-size: 25px;
+    font-family: Bnazanin;
+    color:#F0F0F2;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 168px;
+    height: 44px;
+    font-family: Bnazanin;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #1305BC 0%, #3425E1 100%);
+    box-shadow: -5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    color:#F0F0F2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/*---------------------------------------------*/
+
+.divThree{
+    padding-top: 120px;
+    width: 930px;
+    margin-bottom: 40px;
+}
+.divThree > h1{
+    font-size: 2em;
+    direction: rtl;
+    font-family: BTitr;
+    color:#0D00A3;
+    margin-bottom: 20px;
+}
+.wrapper {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 750px;
+    width: 100%;
+    height: 400px;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .wrapper i.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 36px;
+    width: 36px;
+    background-color: #0D00A3;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.3s linear;
+    z-index: 100;
+    cursor: pointer;
+  }
+  i.button:active {
+    transform: scale(0.94) translateY(-50%);
+  }
+  i#prev {
+    left: 25px;
+  }
+  i#next {
+    right: 25px;
+  }
+  .image-container {
+    height: 320px;
+    max-width: 400px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .image-container .carousel {
+    display: flex;
+    max-width: 400px;
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s ease;
+  }
+  .carousel img {
+    height: 100%;
+    width: 100%;
+    border-radius: 18px;
+    border: 10px solid #fff;
+    object-fit:fill;
+  }
+  /*----------------------------Footer-----------------------------------------*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+    justify-content: right;
+    font-family: Bnazanin;
+    background: #E9E7FF;
+}
+.peyvand{
+    min-width: 200px;
+    margin: 10px;
+    margin-left: 20px;
+}
+.contact{
+    max-width:350px;
+    margin: 10px;
+    margin-left: auto;
+}
+.peyvand > .line {
+    background-color:black;
+    height: 1.5px;
+}
+.contact > .line{
+    background-color:black;
+    height: 1.5px;
+}
+.peyvand > h2 , .contact > h2{
+    font-size: 1.2em;
+}
+.peyvand > h4 , .contact > h4{
+    margin-top: 5px ;
+    font-size: 15px;
+}
+.logo > img{
+    width:135px;
+    height: 210px;
+}
+
+
+@media only screen and (max-width:1070px){
+    /*-----------------------------------------*/
+    .divTwo{
+        height: 300px;
+    }
+    .backphoto img{
+        width: 450px;
+    }
+    .SignIn{
+        margin-top: 50px;
+    }
+    .SignIn h1{
+        font-size: 40px;
+        font-weight: 300;
+        font-family: BTitr;
+        color:#F0F0F2;
+    }
+    .SignIn > h4{
+        font-size: 20px;
+        font-family: Bnazanin;
+        color:#F0F0F2;
+    }
+    .btn{
+        width: 155px;
+        height: 44px;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    /*-----------------------------------------*/
+    
+}    
+@media only screen and (max-width:850px){
+    /*----------------------------navbar-----------------------------*/
+        .menu-btn{
+            padding-top: 8px;
+            width: fit-content;
+            height: fit-content;
+            display: block;
+            opacity: 1;
+        }
+        .container{
+            padding: 0%;
+        }
+        #Unilogo{
+            position: absolute;
+        }
+        .navList{
+            padding-top: 75px;
+            flex-direction: column;
+            width: 100%;
+            height: 85.6vh;
+            align-items:center;
+            background :#405d9d;
+            margin-top: -900px;
+            transition: all 0.5s ease;
+        }
+        .navList li{
+            padding: 25px;
+        }
+        .mobile-menu{
+            margin-top: 0px;
+            border-bottom-left-radius: 30%;
+    
+        }
+    /*----------------------------------------------*/
+        .backphoto{
+            display: none;
+        }
+    
+
+        .divThree{
+            width: 500px;
+        }
+        /*----------------------------------------------------*/
+        footer .logo{
+            display: none;
+        }
+        /*----------------------------------------------------*/
+
+    }
+
+
+@media only screen and (max-width:500px){
+    
+        .signUp{
+            width: 90%;
+            height: auto;
+        }
+        .buttons{
+            flex-wrap: wrap;
+        }
+        .buttons button{
+            margin-bottom: 20px;
+            margin-left: 0;
+        }
+        .signUp > h1{
+            font-size: 1.3em;
+        }
+}
